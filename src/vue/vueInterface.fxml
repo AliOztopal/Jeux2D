@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleur.JeuController">
+   <center>
+      <Pane fx:id="fond" focusTraversable="true" prefHeight="540.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TilePane fx:id="terrain" focusTraversable="true" prefColumns="0" prefRows="0" prefTileHeight="32.0" prefTileWidth="32.0" style="-fx-background-image: url('controlleur/fond.gif');" />
+            <ImageView fx:id="perso" fitHeight="64.0" fitWidth="64.0" layoutX="32.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: black" />
+            <ImageView fx:id="ennemy" fitHeight="150.0" fitWidth="200.0" layoutX="699.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true" />
+         	<HBox layoutX="565.0" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="422.0" style="-fx-border-style: solid;">
+         		<children>
+	         		<VBox fx:id="slot1" onMouseClicked="#ChoixSlot1" prefHeight="35.0" prefWidth="91.0" style="-fx-background-image: url('controlleur/slot.jpeg');">
+                     <children>
+                        <ImageView fx:id="Img_Slot1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="6.0" top="4.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children></VBox>
+	         		<VBox fx:id="slot2" onMouseClicked="#ChoixSlot2" prefHeight="200.0" prefWidth="91.0" style="-fx-background-image: url('controlleur/slot.jpeg');">
+                     <children>
+                        <ImageView fx:id="Img_Slot2" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="6.0" top="4.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children></VBox>
+	         		<VBox fx:id="slot3" onMouseClicked="#ChoixSlot3" prefHeight="200.0" prefWidth="91.0" style="-fx-background-image: url('controlleur/slot.jpeg');">
+                     <children>
+                        <ImageView fx:id="Img_Slot3" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="6.0" top="4.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children></VBox>
+	         		<VBox fx:id="slot4" onMouseClicked="#ChoixSlot4" prefHeight="200.0" prefWidth="91.0" style="-fx-background-image: url('controlleur/slot.jpeg');">
+                     <children>
+                        <ImageView fx:id="Img_Slot4" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="6.0" top="4.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children></VBox>
+	         		<VBox fx:id="slot5" onMouseClicked="#ChoixSlot5" prefHeight="200.0" prefWidth="91.0" style="-fx-background-image: url('controlleur/slot.jpeg');">
+                     <children>
+                        <ImageView fx:id="Img_Slot5" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="6.0" top="4.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children></VBox>
+	         		<VBox fx:id="slot6" onMouseClicked="#ChoixSlot6" prefHeight="200.0" prefWidth="91.0" style="-fx-background-image: url('controlleur/slot.jpeg');">
+                     <children>
+                        <ImageView fx:id="Img_Slot6" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="6.0" top="4.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children></VBox>
+	         		<VBox fx:id="slot7" onMouseClicked="#ChoixSlot7" prefHeight="200.0" prefWidth="91.0" style="-fx-background-image: url('controlleur/slot.jpeg');">
+                     <children>
+                        <ImageView fx:id="Img_Slot7" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="6.0" top="4.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children></VBox>
+	         		<VBox fx:id="slot8" onMouseClicked="#ChoixSlot8" prefHeight="200.0" prefWidth="91.0" style="-fx-background-image: url('controlleur/slot.jpeg');">
+                     <children>
+                        <ImageView fx:id="Img_Slot8" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="6.0" top="4.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children></VBox>
+         		</children>
+         	</HBox>
+            <HBox fx:id="Hand" layoutX="423.0" layoutY="44.0" onMouseClicked="#ChoixMain" prefHeight="48.0" prefWidth="49.0" style="-fx-background-image: url('controlleur/slot.jpeg');">
+               <children>
+                  <ImageView fx:id="Img_SlotMain" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="9.0" top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children></HBox>
+            <Label alignment="CENTER" layoutX="418.0" layoutY="9.0" prefHeight="28.0" prefWidth="58.0" text="Main" />
+            <Label alignment="CENTER" layoutX="738.0" layoutY="11.0" prefHeight="24.0" prefWidth="77.0" text="Inventaire" />
+            <Label fx:id="Txt_Slot1" alignment="CENTER" layoutX="565.0" layoutY="92.0" prefHeight="16.0" prefWidth="52.0" text="0" />
+            <Label fx:id="Txt_Slot2" alignment="CENTER" layoutX="617.0" layoutY="92.0" prefHeight="16.0" prefWidth="52.0" text="0" />
+            <Label fx:id="Txt_Slot3" alignment="CENTER" layoutX="669.0" layoutY="92.0" prefHeight="16.0" prefWidth="52.0" text="0" />
+            <Label fx:id="Txt_Slot4" alignment="CENTER" layoutX="721.0" layoutY="92.0" prefHeight="16.0" prefWidth="52.0" text="0" />
+            <Label fx:id="Txt_Slot5" alignment="CENTER" layoutX="773.0" layoutY="92.0" prefHeight="16.0" prefWidth="52.0" text="0" />
+            <Label fx:id="Txt_Slot6" alignment="CENTER" layoutX="825.0" layoutY="92.0" prefHeight="16.0" prefWidth="52.0" text="0" />
+            <Label fx:id="Txt_Slot7" alignment="CENTER" layoutX="877.0" layoutY="92.0" prefHeight="16.0" prefWidth="52.0" text="0" />
+            <Label fx:id="Txt_Slot8" alignment="CENTER" layoutX="929.0" layoutY="92.0" prefHeight="16.0" prefWidth="52.0" text="0" />
+            <Pane layoutX="8.0" layoutY="8.0" opacity="0.88" prefHeight="150.0" prefWidth="262.0" style="-fx-background-color: grey;">
+               <children>
+                  <Label alignment="TOP_LEFT" layoutX="4.0" prefHeight="156.0" prefWidth="257.0" text="Pour le déplacement du personnage vers la gauche il faut utiliser la touche : &quot;Q&quot; , vers la droite la touche : &quot; D &quot;. Vous pouvez acceder à ne hauteur avec la toucher : &quot;ESPACE&quot; . Pour miner veuillez casser un bloc avec le clique gauche et il sera alors selectionnable dans l'inventaire.Pour vider la main faire un clic droit." textAlignment="JUSTIFY" wrapText="true" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
